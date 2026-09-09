@@ -13,3 +13,46 @@ body {
   line-height: 1.5;
 }
 
+#categories {
+  list-style: none;
+  margin: 0;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  width: fit-content;
+  background-color: #eceafb;
+  /* light lavender panel */
+  border-radius: 8px;
+}
+
+#categories>.item {
+  list-style: none;
+}
+
+#categories>.item h2 {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+#categories>.item ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#categories>.item ul li {
+  background-color: #ffffff;
+  border: 1px solid #d6d3f0;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 15px;
+  color: #333;
+  min-width: 220px;
+}
