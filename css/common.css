@@ -13,46 +13,62 @@ body {
   line-height: 1.5;
 }
 
+
+/* task-1 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
 #categories {
-  list-style: none;
+  width: max-content;
   margin: 0;
   padding: 24px;
+  list-style: none;
   display: flex;
   flex-direction: column;
   gap: 24px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
 
-  width: fit-content;
-  background-color: #eceafb;
-  /* light lavender panel */
+#categories .item {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #f6f6fe;
   border-radius: 8px;
 }
 
-#categories>.item {
-  list-style: none;
+#categories .item h2 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 }
 
-#categories>.item h2 {
-  margin: 0 0 8px 0;
-  font-size: 20px;
-  font-weight: 700;
-  color: #1a1a1a;
-}
-
-#categories>.item ul {
-  list-style: none;
+#categories .item>ul {
   margin: 0;
   padding: 0;
+  list-style: none;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-#categories>.item ul li {
-  background-color: #ffffff;
-  border: 1px solid #d6d3f0;
-  border-radius: 6px;
-  padding: 8px 16px;
-  font-size: 15px;
-  color: #333;
-  min-width: 220px;
+#categories .item>ul>li {
+  width: 360px;
+  height: 40px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 }
+
